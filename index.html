@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i> <span class="dev">Sarthak</span> <span class="student"></span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>I'm <span class="highlight">Sarthak Ojha</span>, a <br></h1>
+                <div class="hero-roles">
+                    <span>BIM Student</span>
+                    <span class="divider">|</span>
+                    <span>Developer</span>
+                </div>
+                <p>Solving real-world problems through technology and business.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!--<img src="image/profile-pic.png" alt="Coming Soon">-->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+           <div class="about-content">
+    <div class="about-content">
+    <div class="about-text">
+    <p>As a student of Bachelor of Information Management, I am passionate about merging technology with business insight. I enjoy building practical solutions that solve real problems and improve decision-making.</p>
+    <p>With hands-on experience in creating various websites, applications, and UI/UX designs, I focus on crafting digital tools that are both user-friendly and efficient. I'm also proud to have contributed to <span class="highlight-microsoft">Microsoft</span> which set a <span class="highlight-record">GUINNESS WORLD RECORDS™</span> title.</p>
+    <p>Equipped with skills in programming, data handling, and systems analysis, I aim to bridge the gap between technical development and strategic goals. Currently exploring web development, databases, and business analytics to prepare for a dynamic role in tech-driven organizations or startups.</p>
+  </div>
+
+  </div>
+
+  </div>
+
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+ <section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+    
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="image/car.png" alt="Car Rental Website" onclick="openModal(this)">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Car Rental</h3>
+                    <p class="project-description">A full-featured car rental website with booking system, user accounts, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="image/quiz.png" alt="Quiz Application" onclick="openModal(this)">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Interactive Quiz App</h3>
+                    <p class="project-description">A dynamic quiz application with multiple categories, and score tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="image/website.png" alt="Portfolio Website" onclick="openModal(this)">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-description">A responsive personal portfolio website showcasing my projects and skills.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-cta">
+            <a href="docs/Sarthak_Ojha_CV.pdf" class="btn btn-secondary" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+        
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal" onclick="closeModal()">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" id="modalImage">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-container">
+               <div class="contact-info">
+    <h3>Contact Me</h3>
+    <p>If you're interested in working together, have questions, or just want to connect—I'd love to hear from you!</p>
+    
+    <div class="info-list">
+        <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-details">
+                <h4>Email</h4>
+                <a href="mailto:sarthakojh@gmail.com">sarthakojh@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-details">
+                <h4>Location</h4>
+                <p>Kathmandu,Balaju</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <!-- Replace `YOUR_FORM_ID` with the ID Formspree gives you -->
+                    <form id="contact-form"
+                          action="https://formspree.io/f/mbloaoee"
+                          method="POST">
+                        <div id="form-status" class="form-status"></div>
+
+                        <!-- So Formspree can send a confirmation to the visitor: -->
+                        <input type="hidden" name="_replyto" id="replyto-field">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-button">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display:none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="dev">Sar</span><span class="student">thak</span>
+                </div>
+                <div class="footer-social">
+                 <a href="https://github.com/Sarthak-Ojha" class="social-link"><i class="fab fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/sarthak-ojha/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                 <a href="https://www.instagram.com/_sarthakojha/" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sarthak Ojha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
